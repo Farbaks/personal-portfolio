@@ -2,7 +2,7 @@ const express = require('express');
 const compression = require('compression');
 const path = require('path');
 const app = express();
-// app.use(compression());
+app.use(compression());
 
 // Serve static files....
 app.use(express.static(__dirname + '/dist/personal-website'));
