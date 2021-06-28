@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 33, 400, 500, 600, 700;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v6/pe03MImSLYBIv1o4X1M8cc8GBs5iU1ECVZl_86Y.woff2) format("woff2");
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    // font-family: "Raleway", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    // font-family: "Nunito Sans", sans-serif;
+    // font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+* {
+    font-feature-settings: "lnum" 1;
+    box-sizing: border-box;
+    transition: all ease .3s;
+    line-height: 160%;
+    letter-spacing: 0.01px;
+}
+p {
+    margin: 0;
+}

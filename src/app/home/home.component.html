@@ -1,0 +1,251 @@
+<div class="page-body">
+    <header [class]="this.scrollPosition > 160 ? 'scroll-top': ''">
+        <div class="nav">
+            <p class="link" (click)="scrollToContent('.top')">Home</p>
+            <p class="link" (click)="scrollToContent('.about')">About</p>
+            <p class="link" (click)="scrollToContent('.portfolio')">Portfolio</p>
+            <button (click)="scrollToContent('.contact')">Contact</button>
+        </div>
+        
+        <div class="hamburger" [class]="this.openNav ? 'open-nav': ''" (click)="toggleNavBar()">
+            <div class="h1"></div>
+            <div class="h2"></div>
+        </div>
+    </header>
+    <div class="side-nav" [class]="this.openNav ? 'open-sideBar': ''">
+        <p class="link" (click)="scrollToContent('.top')">Home</p>
+        <p class="link" (click)="scrollToContent('.about')">About</p>
+        <p class="link" (click)="scrollToContent('.portfolio')">Portfolio</p>
+        <button (click)="scrollToContent('.contact')">Contact</button>
+    </div> 
+    <main>
+        <!-- Hero section -->
+        <section class="top">
+            <img src="assets/images/cover1.jpg" />
+            <div class="overflow">
+                <p class="heading">Hi, I'm Farouk!</p>
+                <p class="subheading">"Hello World" Engineer, self-proclaimed photographer, Lord Of The Rings fanboy and
+                    an
+                    Anime lover 💪🏾</p>
+                <div class="buttons">
+                    <button (click)="scrollToContent('.contact')">Get in touch</button>
+                    <a href="assets/files/Farouk+Bakre`s CV.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+        </section>
+        <!-- About Me section -->
+        <section class="section about">
+            <div class="image">
+                <img src="assets/images/picture1.jpg" />
+            </div>
+            <p class="title">About me</p>
+            <p class="subtitle">I am software developer with 3+ years experience building different applications and
+                working with different technologies. I love building products to solve the littlest of problems...<i>and
+                    just because I can</i>. I specialize in Frontend, Backend,
+                Mobile and Desktop application development. I currently work as a Frontend Developer at Sudo Africa.</p>
+            <p class="subtitle">Some of the technologies I have worked with are:</p>
+            <div class="skills">
+                <div class="skill-box">
+                    <div class="icon"><img src="assets/images/frontend1.png" /></div>
+                    <p class="name">Frontend</p>
+                    <div class="list">
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>HTML, CSS, Javascript, Typescript</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>Angular, NgRx</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>React</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>Vue, VueX, Nuxt</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>GraphQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><img src="assets/images/backend1.png" /></div>
+                    <p class="name">Backend</p>
+                    <div class="list">
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>PHP, Laravel</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>Nodejs</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>NestJs</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="icon"><img src="assets/images/others1.png" /></div>
+                    <p class="name">Others</p>
+                    <div class="list">
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>Ionic</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>Electron.js</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>NFC</p>
+                        </div>
+                        <div class="item">
+                            <div class="check"></div>
+                            <p>Itty Bitty Photography</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured projects -->
+        <section class="section portfolio">
+            <p class="title">Featured Projects</p>
+            <p class="subtitle">Here are a few personal projects I have worked on</p>
+            <div class="projects">
+                <div class="item">
+                    <div class="details">
+                        <div class="project-name">
+                            <p>Income Tracker</p>
+                            <div class="line"></div>
+                        </div>
+                        <p class="date">2019</p>
+                        <p class="description">Helps freelancers and entrepreneurs easily
+                            keep track of
+                            their jobs, gigs, projects; generate and share quotations and invoices for each job; and
+                            track their overall and monthly income made from completed jobs.</p>
+                        <div class="tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Ionic</span>
+                            <span class="tag">Typescript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Heroku</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/Farbaks/incomeTracker" target="_blank">GitHub Repo</a>
+                            <a href="https://www.mediafire.com/file/am2gplyopc518hp/incomeTracker.apk/file" target="_blank">Get Android App</a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <div class="image-con">
+                            <div>
+                                <img
+                                    src="https://cdn.dribbble.com/users/5134613/screenshots/14849579/media/287d53f0e35e339088899612aae88b9d.png" />
+                            </div>
+
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="item reverse">
+                    <div class="details">
+                        <div class="project-name">
+                            <p>Recipe</p>
+                            <div class="line"></div>
+                        </div>
+                        <p class="date">2019</p>
+                        <p class="description">This app allows users to search for, post, like and save food recipes of
+                            theirs or others and interact
+                            with other users.</p>
+                        <div class="tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Ionic</span>
+                            <span class="tag">Typescript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Heroku</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/Farbaks/recipeApp" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <div class="image-con">
+                            <div>
+                                <img
+                                    src="https://cdn.dribbble.com/users/5134613/screenshots/14805437/media/ab3a7ab347e26269ca4fc429446bc999.png" />
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="details">
+                        <div class="project-name">
+                            <p>Mayy Collection</p>
+                            <div class="line"></div>
+                        </div>
+                        <p class="date">2018</p>
+                        <p class="description">This is a template site for online shopping for clothes. It also comes with a dashboard tdmplate for admin features and analytical purposes</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/Farbaks/Mayycollection" target="_blank">GitHub Repo</a>
+                            <a href="https://mayycollection.vercel.app/" target="_blank">View Template</a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <div class="image-con">
+                            <div>
+                                <img
+                                    src="https://cdn.dribbble.com/users/5134613/screenshots/14805611/media/2a9be25eda7f1a7d19dd8ae818cb6351.png" />
+                            </div>
+
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact me -->
+        <section class="section contact">
+            <p class="title">Work with me</p>
+            <p class="subtitle">Interested in working together on a project? I'd love to hear from you, just hit me up 💪🏾</p>
+            <div class="list">
+                <a class="item" href="https://www.linkedin.com/in/faroukbakre/" target="_blank">
+                    <img src="assets/images/linkedin.svg" />
+                </a>
+                <a class="item" href="https://dribbble.com/Farbaks" target="_blank">
+                    <img src="assets/images/dribbble.svg" />
+                </a>
+                <a class="item github" href="https://github.com/Farbaks" target="_blank">
+                    <img src="assets/images/github.svg" />
+                </a>
+                <a class="item" href="https://twitter.com/Farbaks" target="_blank">
+                    <img src="assets/images/twitter.svg" />
+                </a>
+                <a class="item" href="mailto:faroukbakre@gmail.com" target="_blank">
+                    <img src="assets/images/email.svg" />
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Farouk Bakre {{currentDate}}.</p>
+    </footer>
+</div>
