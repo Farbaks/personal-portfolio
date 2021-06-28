@@ -159,6 +159,9 @@
                 @media screen and(max-width:768px) {
                     padding: 200px 16px 20px;
                 }
+                @media screen and(max-width:540px) {
+                    padding: 150px 16px 20px;
+                }
                 .heading {
                     font-size: 76px;
                     font-weight: 500;
@@ -317,6 +320,8 @@
                     @media screen and(max-width:540px) {
                         width: 100%;
                         margin-bottom: 20px;
+                        --check-color: rgb(117, 16, 247);
+                        --item-color: rgb(10, 10, 10);
                     }
                     .icon {
                         width: 80px;
@@ -623,6 +628,9 @@
                     &:hover {
                         filter: none;
                     }
+                    @media screen and(max-width:540px) {
+                        filter: none !important;
+                    }
                     img {
                         width: 100%;
                     }
@@ -631,6 +639,9 @@
                     filter: brightness(0) saturate(100%) invert(82%) sepia(1%) saturate(0%) hue-rotate(34deg)
                         brightness(93%) contrast(93%) !important;
                     &:hover {
+                        filter: none !important;
+                    }
+                    @media screen and(max-width:540px) {
                         filter: none !important;
                     }
                 }
