@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.2.1",
     "@angular/platform-browser-dynamic": "~11.2.1",
     "@angular/router": "~11.2.1",
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "ngx-page-scroll-core": "^7.0.5",
     "rxjs": "~6.6.0",
